@@ -1,0 +1,26 @@
+<a name="about"></a>
+        <div class="intro-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Bienvenidos a Parto.org!</h1>
+                        <h3>Para ayudar a las comadronas</h3>
+     <% if user_signed_in? %>
+          # do something
+     <% else %>
+       <p>
+         <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Crear cuenta nueva", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+
+       </p>
+  <% end %>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>
