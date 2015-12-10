@@ -1,30 +1,614 @@
-<a name="about"></a>
-        <div class="intro-header">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Bienvenidos a Parto.org!</h1>
-                        <h3>Para ayudar a las comadronas mira como cambia</h3>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
 
-                        
-     <% if user_signed_in? %>
-          # do something
-     <% else %>
-       <p>
-         <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-default btn-lg" %>
-         <%= link_to "Crear cuenta nueva", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+    <title>Edoo | Tour</title>
 
-       </p>
-  <% end %>  
+    <link rel="stylesheet" href="static/styles/style.css" type="text/css">
+    <link href="static/images/favicon.png" rel="shortcut icon">
+
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lte IE 7]>
+      <script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!--[if lt IE 7]>
+      <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"><![endif]-->
+  </head>
+
+  <body>
+
+    
+    <div class="mobile-main-menu" id="mobile-main-menu" data-window-height="true">
+      <div class="mobile-upbar">
+        <a href="/" class="logo"><img src="static/images/logo.png" alt="Edoo"></a>
+        <a class="close-mobile-menu" id="close-mobile-menu"><i class="fa fa-times"></i></a>
+      </div>
 
 
-                        </ul>
-                    </div>
-                </div>
+      <nav>
+        <a href="/" class="active" >Tour</a>
+        <a href="/caracteristicas"  >Características</a>
+        <a href="/servicios"  >Servicios</a>
+        <div class="button-wrapper">
+          <a href="#start-now" data-popup="true" class="button green" rel="magnific-popup">Contacto</a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="navbar" class="navbar" data-afix-at=".start-navbar-afix">
+      <div class="upbar">
+        <a class="logo" href="/"><img src="static/images/logo.png" alt="Edoo"></a>
+
+        <nav>
+          <div class="button-wrapper">
+            <a href="#start-now" data-popup="true" class="button traslucent" rel="magnific-popup">Contacto</a>
+          </div>
+          <a href="/servicios" >Servicios</a>
+          <a href="/caracteristicas" >Características</a>
+          <a href="/" class="active">Tour</a>
+        </nav>
+
+        <a class="open-mobile-menu" id="open-mobile-menu"><i class="fa fa-bars"></i></a>
+      </div>
+    </div>
+  <div class="home">
+    <div class="head" data-window-height="true">
+
+      <div class="mobile-upbar">
+  <a href="/" class="logo"><img src="static/images/logo.png" alt="Edoo"></a>
+
+  <nav>
+    <div class="button-wrapper">
+      <a href="#start-now" data-popup="true" class="start-now" rel="magnific-popup">Contacto</a>
+    </div>
+    <a href="/servicios" >Servicios</a>
+    <a href="/caracteristicas" >Características</a>
+    <a href="/" class="active">Tour</a>
+  </nav>
+
+  <a class="open-mobile-menu" id="open-mobile-menu-attached"><i class="fa fa-bars"></i></a>
+</div>
+      <div class="veil">
+        <div class="inner-slide" data-vertical-center="true">
+          <div class="text">
+            Software de <strong>gestión educativa</strong> que ayudará a tu <strong>colegio</strong> a alcanzar su <br> <strong>máximo potencial</strong>
+
+            <div class="subtitle">
+              Nuestro objetivo es agilizar los procesos para que todos se enfoquen en lo más importante: la educación
+            </div>
+          </div>
+
+          <div class="buttons">
+            <a class="button blue" href="/caracteristicas"><span>Características</span></a>
+            <a href="#start-now" class="button green open-contact" rel="magnific-popup">Empezar ahora</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide active" style="background-image:url(static/images/slides/home_1.jpg);"></div>
+      <div class="slide" style="background-image:url(static/images/slides/home_2.jpg);"></div>
+      <div class="slide" style="background-image:url(static/images/slides/home_3.jpg);"></div>
+      <div class="slide" style="background-image:url(static/images/slides/home_4.jpg);"></div>
+      <div class="slide" style="background-image:url(static/images/slides/home_5.jpg);"></div>
+
+      <div class="arrows" data-vertical-center="true">
+        <div class="arrow-container">
+          <a class="arrow left"><i class="fa fa-angle-left"></i></a>
+          <a class="arrow right"><i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="how-it-works">
+        <a class="down-arrow" href="#focus-areas" data-scroll-to="true"><i class="fa fa-chevron-down"></i></a> <a class="label" href="#focus-areas" data-scroll-to="true">Ve cómo funciona</a>
+      </div>
+    </div>
+
+    <div class="focus-areas start-navbar-afix" id="focus-areas">
+
+      <div class="intro">
+        <img src="static/images/logo_blue.png" alt="Edoo"> <br> simplifica y <strong>agiliza procesos</strong> institucionales, facilitando la comunicación y garantizando la <strong>seguridad de tu información</strong>
+      </div>
+
+      <div class="areas" data-emerge="70%">
+        <div class="area grades">
+          <div class="icon"><i class="fa fa-file-text-o"></i></div>
+          <div class="data">
+            <div class="title">Boleta de calificaciones</div>
+            <div class="description">Y más reportes</div>
+            <a href="/caracteristicas/#reports-anchor" class="more">Más información...</a>
+          </div>
+        </div>
+
+        <div class="area calendar">
+          <div class="icon"><i class="fa fa-calendar-o"></i></div>
+          <div class="data">
+            <div class="title">Calendario y Agenda</div>
+            <div class="description">Organización eficaz</div>
+            <a href="/caracteristicas/#calendar-anchor" class="more">Más información...</a>
+          </div>
+        </div>
+
+        <div class="area payments">
+          <div class="icon"><i class="fa fa-mobile"></i></div>
+          <div class="data">
+            <div class="title">Apps móviles</div>
+            <div class="description">Acceso en todo lugar</div>
+            <a href="/caracteristicas/#apps-anchor" class="more">Más información...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="all-the-info-you-need">
+      <div class="inner-wrapper">
+        <div class="lock"><i class="fa fa-lock"></i></div>
+        <div class="text">Toda la información que necesites en <strong>todo momento</strong> y lo más importante, de <strong>forma segura</strong></div>
+
+        <div class="buttons">
+          <a class="button blue" href="#start-now" rel="magnific-popup">Solicitar demo</a>
+          <a class="button green" href="/caracteristicas">Características</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="no-time-wasted">
+      <div class="intro">Procesos que solían tardar horas con <img src="static/images/logo_blue.png" alt="Edoo"> <br>los puedes <strong>realizar en segundos.</strong></div>
+
+      <div class="description">
+        <p>Nuestro fuerte enfoque en el usuario hace que Edoo sea fácil de usar.</p>
+        <p>Edoo es una herramienta que te ayuda a ser eficiente, y enfocarte en lo más importante: <strong>la educación.</strong></p>
+      </div>
+
+      <div class="computer-positioner">
+        <div class="computer-container" data-emerge="70%">
+          <div class="computer">
+            <div class="face"></div>
+            <div class="download"></div>
+            <div class="corner-notification"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="agile-and-effective">
+      <div class="intro">
+        Sistema <strong>ágil</strong> y <strong>efectivo</strong> de notificaciones
+      </div>
+
+      <div class="description">
+        <p>Para que el proceso sea efectivo, es necesario que todos los involucrados estén al tanto de los eventos más importante.</p>
+        <p>El sistema de notificaciones te informa de todo lo que necesitas saber, en <strong>tiempo real</strong>.</p>
+        <p>&nbsp;</p>
+        <p><img src="static/images/devices_big.png" alt="Dispositivos"></p>
+      </div>
+
+      <div class="hand" data-emerge="70%">
+        <div class="bubble-container">
+          <div class="isotype"></div>
+          <div class="bubble">3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="empowers">
+      <div class="intro">
+        Empodera a <strong>padres, alumnos y maestros</strong> motivándolos a participar activamente del proceso educativo
+      </div>
+
+      <hr>
+
+      <div class="tabs">
+        <a class="tab active" data-tab-content="#parents-tab-content">
+          <i class="fa fa-briefcase"></i> <br>
+          <span class="text">Padres</span>
+        </a>
+
+        <a class="tab" data-tab-content="#students-tab-content">
+          <i class="fa fa-graduation-cap"></i> <br>
+          <span class="text">Alumnos</span>
+        </a>
+
+        <a class="tab" data-tab-content="#teachers-tab-content">
+          <i class="fa fa-coffee"></i> <br>
+          <span class="text">Maestros</span>
+        </a>
+      </div>
+
+      <div class="tabs-content rotating-phone" data-emerge="70%">
+        <div class="tab-content" id="parents-tab-content">
+          <div class="phone-container">
+            <div class="dashed-lines"></div>
+
+            <div class="phone left"></div>
+
+            <a class="feature pos-1" href="/caracteristicas/#reports-anchor">
+              <span class="title-full">Boleta de<br>calificaciones</span>
+              <span class="icon"><i class="fa fa-file-text-o"></i></span>
+              <span class="title">Notas</span>
+            </a>
+
+            <a class="feature pos-3" href="/caracteristicas/#notifications-anchor">
+              <span class="title-full">Avisos y<br>Comunicación</span>
+              <span class="icon"><i class="fa fa-bell"></i></span>
+              <span class="title">Avisos</span>
+            </a>
+
+            <a class="feature pos-5" href="/caracteristicas/#reports-anchor">
+              <span class="icon"><i class="fa fa-money"></i></span>
+              <span class="title">Finanzas</span>
+              <span class="title-full">Resumen<br>Financiero</span>
+            </a>
+
+            <a class="feature pos-7" href="/caracteristicas/#reports-anchor">
+              <span class="icon"><i class="fa fa-bar-chart-o"></i></span>
+              <span class="title">Rendimiento</span>
+              <span class="title-full">Reportes de<br>Rendimiento</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="tab-content" id="students-tab-content">
+          <div class="phone-container">
+            <div class="dashed-lines"></div>
+
+            <div class="phone front"></div>
+
+            <a class="feature pos-3" href="/caracteristicas/#activities-anchor">
+              <span class="title-full">Actividades <br>y tareas</span>
+              <span class="icon"><i class="fa fa-calendar-o"></i></span>
+              <span class="title">Actividades</span>
+            </a>
+
+            <a class="feature pos-1" href="/caracteristicas/#notifications-anchor">
+              <span class="title-full">Avisos y<br>Comunicación</span>
+              <span class="icon"><i class="fa fa-bell"></i></span>
+              <span class="title">Avisos</span>
+            </a>
+
+            <a class="feature pos-5">
+              <span class="icon"><i class="fa fa-check"></i></span>
+              <span class="title">Notas</span>
+              <span class="title-full">Notas<br>al día</span>
+            </a>
+
+            <a class="feature pos-7" href="/caracteristicas/#achievements-anchor">
+              <span class="icon"><i class="fa fa-trophy"></i></span>
+              <span class="title">Logros</span>
+              <span class="title-full">Logros y<br>Rendimiento</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="tab-content" id="teachers-tab-content">
+          <div class="phone-container">
+            <div class="dashed-lines"></div>
+
+            <div class="phone right"></div>
+
+            <a class="feature pos-1" href="/caracteristicas/#activities-anchor">
+              <span class="title-full">Actividades<br>y tareas</span>
+              <span class="icon"><i class="fa fa-calendar-o"></i></span>
+              <span class="title">Actividades</span>
+            </a>
+
+            <a class="feature pos-3" href="/caracteristicas/#notifications-anchor">
+              <span class="title-full">Avisos y<br>Comunicación</span>
+              <span class="icon"><i class="fa fa-bell"></i></span>
+              <span class="title">Avisos</span>
+            </a>
+
+            <a class="feature pos-5">
+              <span class="icon"><i class="fa fa-check"></i></span>
+              <span class="title">Calificación</span>
+              <span class="title-full">Calificación<br>Eficiente</span>
+            </a>
+
+            <a class="feature pos-7" href="/caracteristicas/#reports-anchor">
+              <span class="icon"><i class="fa fa-bar-chart-o"></i></span>
+              <span class="title">Rendimiento</span>
+              <span class="title-full">Reportes de<br>Rendimiento</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="achievements">
+      <div class="inner-wrapper">
+        <div class="text">
+          <div class="intro">
+            <div class="inner-intro">
+              <img src="static/images/logo_blue.png" alt="Edoo"> introduce por primera vez un <strong>sistema de logros</strong> basado en <strong>competencias</strong>
+            </div>
+          </div>
+
+          <div class="description">
+            <p>Un logro es una representación gráfica de una <strong>competencia</strong> desarrollada por los alumnos.</p>
+            <p>Edoo permite a los maestros, estudiantes y padres entender de una manera profunda el desarrollo cognitivo de los estudiantes.</p>
+            <div class="achievement-icons">
+              <span class="achievement-icon">
+                <i class="fa fa-bell"></i>
+              </span>
+
+              <span class="achievement-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+              <span class="achievement-icon">
+                <i class="fa fa-trophy"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ipad-container" data-emerge="70%">
+          <div class="ipad">
+            <div class="green-achievement"></div>
+            <div class="yellow-achievement"></div>
+            <div class="purple-achievement"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intelligent-reports">
+      <div class="floating-text">
+        <div class="intro">
+          <img src="static/images/logo_blue.png" alt="Edoo"> brinda a tu institución completo control en todo momento con <strong>reportes inteligentes</strong> para todos los usuarios
+        </div>
+
+        <div class="buttons">
+          <a class="button green" href="/caracteristicas#reports-anchor">Ver reportes</a>
+          <a class="button blue" href="#start-now" rel="magnific-popup">Más información</a>
+        </div>
+      </div>
+
+      <!-- <div class="arrows">
+        <div class="arrow-container">
+          <a class="arrow left"><i class="fa fa-angle-left"></i></a>
+          <a class="arrow right"><i class="fa fa-angle-right"></i></a>
+        </div>
+      </div> -->
+
+      <div class="slides-container">
+        <div class="slide student active" style="background-image: url(static/images/reportes/classroom.jpg);">
+          <div class="device-container-outer">
+            <div class="device-container-inner" data-emerge="60%">
+              <div class="device"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="slide teacher" style="background-image: url(static/images/reportes/office.jpg);">
+          <div class="device-container-outer">
+            <div class="device-container-inner" data-emerge="60%">
+              <div class="device"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide parent" style="background-image: url(static/images/reportes/livingroom.jpg);">
+          <div class="device-container-outer">
+            <div class="device-container-inner" data-emerge="60%">
+              <div class="device"></div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="size-does-not-matter">
+      <div class="wrapper">
+        <div class="icon-container">
+          <div class="icon-square-wrapper">
+            <div class="icon-circle-wrapper">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro">
+          No importa el tamaño o tipo de tu institución, edoo <strong>se adapta</strong> para <strong>suplir tus necesidades</strong>, contamos con planes para todos.
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="wrapper">
+        <div class="intro">
+          Ve lo que maestros, padres y directivos están diciendo acerca de <img src="static/images/logo_blue.png" alt="Edoo">
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="slides-container" data-emerge="70%">
+          <div class="slide active">
+            <div class="comment">
+              Edoo es un sistema que me facilita <strong>calificar y llevar mis registros en orden</strong>, mis alumnos se mantienen <strong>atentos y motivados</strong> a cuando les asigno un logro.
             </div>
 
+            <div class="person">
+              <span class="face">
+                <img src="static/images/teacher_face.png" alt="Profesor">
+              </span>
+
+              <span class="data">
+                <span class="name">Eunice Rosales</span><br>
+                <span class="role">Maestra Liga de Vida Nueva</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="comment">
+              Nunca antes había tenido la oportunidad de estar <strong>tan enterada de las actividades de mis hijas</strong>, edoo nos ha ayudado a que nunca se nos olvide entregar una tarea.
+            </div>
+
+            <div class="person">
+              <span class="face">
+                <img src="static/images/parent_face.png" alt="Profesor">
+              </span>
+
+              <span class="data">
+                <span class="name">Flor de López</span><br>
+                <span class="role">Padre de familia</span>
+              </span>
+            </div>
+          </div>
         </div>
+
+        <div class="arrows">
+          <div class="arrow-container">
+            <a class="arrow left"><i class="fa fa-angle-left"></i></a>
+            <a class="arrow right"><i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+    <div class="popup-wrapper">
+      <div class="contact-popup popup" id="start-now">
+        <div class="title">
+          Comienza a usar <img class="logo" src="static/images/dark_logo.png" alt="Edoo">
+        </div>
+
+        <div class="subtitle">
+          También puedes  platicar con nosotros por medio de <strong>info@edoo.io</strong> o el teléfono <strong>(502) 3023 - 6828</strong>
+        </div>
+
+        <form id="contact-form" method="POST" action="">
+          <label for="name">Nombre:</label>
+          <input name="name" type="text" placeholder="ej. Juan López" required>
+
+          <div class="half-container">
+            <div>
+              <label for="email">Información de contacto:</label>
+            </div>
+            <input class="half-left" name="email" type="email" placeholder="Email" required>
+            <input class="half-right" name="phone" type="text" placeholder="Teléfono" required>
+          </div>
+
+          <label for="school">Centro educativo</label>
+          <input name="school" type="text" placeholder="ej. Colegio el Saber" required>
+          <input name="subject" type="text" style="width:1px;height:1px;opacity:0.01;position:fixed;left:-1px;top:-1px;margin:0;padding:0;border:none;">
+          <select name="charge">
+            <option val="Soy director">Soy director</option>
+            <option val="Soy administrador">Soy administrador</option>
+            <option val="Soy maestro">Soy maestro</option>
+            <option val="Soy padre">Soy padre de familia</option>
+            <option val="Soy alumno">Soy alumno</option>
+          </select>
+
+          <div class="actions">
+            <a class="button gray no-shadow" onclick="jQuery.magnificPopup.close();">Cancelar</a>
+            <button class="button blue no-shadow" id="contact-submit" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
+
+    <div class="next-step">
+      <div class="intro">Da el siguiente paso hacia la innovación y tecnología educativa</div>
+      <div class="description">Pon a tu institución un paso adelante de las demás al implementar innovadoras herramientas organizacionales y educativas.</div>
+      <a class="button green open-contact" href="#start-now" rel="magnific-popup">Comienza ahora</a>
+    </div>
+
+    <div class="footer">
+      <div class="wrapper">
+
+        <div class="second-breaker">
+          <div class="edoo-info">
+            <div class="logo">
+              <img src="static/images/logo.png" alt="Edoo">
+            </div>
+
+            <div class="location">Guatemala - Guatemala C.A.</div>
+
+            <div class="contact-info">
+              <div class="row">
+                <span class="icon"><i class="fa fa-phone-square"></i></span> <span class="text">(502) 3023 - 6828</span>
+              </div>
+
+              <div class="row">
+                <span class="icon"><i class="fa fa-envelope"></i></span> <span class="text">info@edoo.io</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="first-breaker">
+            <div class="edoo-links">
+              <div class="columns">
+                <div class="column">
+                  <div class="title">Edoo</div>
+                  <div class="links">
+                    <a href="/">Tour</a>
+                    <a href="/caracteristicas">Características</a>
+                    <a href="/servicios">Servicios</a>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="title">Soporte</div>
+                  <div class="links">
+                    <a href="http://edoo.zendesk.com">Centro de ayuda</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="edoo-suscribe">
+              <div class="title">Suscríbete a nuestro Newsletter</div>
+              <form class="form" action="" method="POST">
+                <span class="input-wrapper">
+                  <input type="hidden" name="name" value="Suscripción">
+                  <input type="email" placeholder="Ingresa tu email aquí..." required>
+                  <i class="fa fa-envelope-o"></i>
+                </span>
+                <input name="subject" type="text" style="width:1px;height:1px;opacity:0.01;position:fixed;left:-1px;top:-1px;margin:0;padding:0;border:none;" required>
+
+                <button class="button blue" type="submit">Suscribirse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="edoo-credits">
+          &copy; 2015 edoo.io. All rights reserved. <a href="https://edoo.zendesk.com/hc/es/articles/206249497-T%C3%A9rminos-y-Privacidad">Terms of Service and Privacy Policy.</a>
+        </div>
+      </div>
+    </div>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-63779442-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="static/scripts/core.min.js"></script>
+
+    <script>
+      jQuery("#contact-form").submit(function(e){
+        jQuery("#contact-submit").html("Enviando").addClass("disabled").attr("disabled", "disabled");
+      });
+    </script>
+
+          <script>
+        applySlider(jQuery(".head"), true);
+        applySlider(jQuery(".intelligent-reports"));
+        applySlider(jQuery(".testimonials"));
+      </script>
+    
+    
+    
+  </body>
 </html>
