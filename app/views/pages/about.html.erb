@@ -1,614 +1,1042 @@
+
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
 
-    <title>Edoo | Tour</title>
-
-    <link rel="stylesheet" href="static/styles/style.css" type="text/css">
-    <link href="static/images/favicon.png" rel="shortcut icon">
-
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if lte IE 7]>
-      <script src="js/IE8.js" type="text/javascript"></script><![endif]-->
-    <!--[if lt IE 7]>
-      <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"><![endif]-->
-  </head>
-
-  <body>
+    <title>
+      
+        Bootstrap Components &middot; 
+      
+    </title>
 
     
-    <div class="mobile-main-menu" id="mobile-main-menu" data-window-height="true">
-      <div class="mobile-upbar">
-        <a href="/" class="logo"><img src="static/images/logo.png" alt="Edoo"></a>
-        <a class="close-mobile-menu" id="close-mobile-menu"><i class="fa fa-times"></i></a>
-      </div>
+      <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+      <link href="../assets/css/toolkit-minimal.css" rel="stylesheet">
+      <link href="../assets/css/application-minimal.css" rel="stylesheet">
+    
+
+    
+      <link href="../assets/css/docs.css" rel="stylesheet">
+    
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
 
 
-      <nav>
-        <a href="/" class="active" >Tour</a>
-        <a href="/caracteristicas"  >Características</a>
-        <a href="/servicios"  >Servicios</a>
-        <div class="button-wrapper">
-          <a href="#start-now" data-popup="true" class="button green" rel="magnific-popup">Contacto</a>
-        </div>
-      </nav>
-    </div>
-
-    <div id="navbar" class="navbar" data-afix-at=".start-navbar-afix">
-      <div class="upbar">
-        <a class="logo" href="/"><img src="static/images/logo.png" alt="Edoo"></a>
-
-        <nav>
-          <div class="button-wrapper">
-            <a href="#start-now" data-popup="true" class="button traslucent" rel="magnific-popup">Contacto</a>
-          </div>
-          <a href="/servicios" >Servicios</a>
-          <a href="/caracteristicas" >Características</a>
-          <a href="/" class="active">Tour</a>
-        </nav>
-
-        <a class="open-mobile-menu" id="open-mobile-menu"><i class="fa fa-bars"></i></a>
-      </div>
-    </div>
-  <div class="home">
-    <div class="head" data-window-height="true">
-
-      <div class="mobile-upbar">
-  <a href="/" class="logo"><img src="static/images/logo.png" alt="Edoo"></a>
-
-  <nav>
-    <div class="button-wrapper">
-      <a href="#start-now" data-popup="true" class="start-now" rel="magnific-popup">Contacto</a>
-    </div>
-    <a href="/servicios" >Servicios</a>
-    <a href="/caracteristicas" >Características</a>
-    <a href="/" class="active">Tour</a>
-  </nav>
-
-  <a class="open-mobile-menu" id="open-mobile-menu-attached"><i class="fa fa-bars"></i></a>
+<body>
+  <div class="stage-shelf hidden" id="sidebar">
+  <ul class="nav nav-bordered nav-stacked">
+    <li class="nav-header">Examples</li>
+    <li>
+      <a href="../index.html">Startup</a>
+    </li>
+    <li>
+      <a href="../minimal/index.html">Minimal</a>
+    </li>
+    <li>
+      <a href="../bold/index.html">Bold</a>
+    </li>
+    <li class="nav-divider"></li>
+    <li class="nav-header">Docs</li>
+    <li class="active">
+      <a href="../docs/index.html">Toolkit</a>
+    </li>
+    <li>
+      <a href="http://getbootstrap.com">Bootstrap</a>
+    </li>
+  </ul>
 </div>
-      <div class="veil">
-        <div class="inner-slide" data-vertical-center="true">
-          <div class="text">
-            Software de <strong>gestión educativa</strong> que ayudará a tu <strong>colegio</strong> a alcanzar su <br> <strong>máximo potencial</strong>
 
-            <div class="subtitle">
-              Nuestro objetivo es agilizar los procesos para que todos se enfoquen en lo más importante: la educación
-            </div>
-          </div>
 
-          <div class="buttons">
-            <a class="button blue" href="/caracteristicas"><span>Características</span></a>
-            <a href="#start-now" class="button green open-contact" rel="magnific-popup">Empezar ahora</a>
-          </div>
+  <div class="stage" id="app-stage">
+
+    <button class="btn btn-link stage-toggle" data-target="#app-stage" data-toggle="stage">
+      <span class="icon icon-menu stage-toggle-icon"></span>
+      Menu
+    </button>
+
+    
+      <div class="docs-header" id="content">
+        <div class="container">
+          <h1>Bootstrap kitchen sink</h1>
+          <p>View nearly every component from Bootstrap here on a single page. Especially useful for theme customization and building new pages.</p>
         </div>
       </div>
+      <div class="container">
+        <h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
 
-      <div class="slide active" style="background-image:url(static/images/slides/home_1.jpg);"></div>
-      <div class="slide" style="background-image:url(static/images/slides/home_2.jpg);"></div>
-      <div class="slide" style="background-image:url(static/images/slides/home_3.jpg);"></div>
-      <div class="slide" style="background-image:url(static/images/slides/home_4.jpg);"></div>
-      <div class="slide" style="background-image:url(static/images/slides/home_5.jpg);"></div>
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
 
-      <div class="arrows" data-vertical-center="true">
-        <div class="arrow-container">
-          <a class="arrow left"><i class="fa fa-angle-left"></i></a>
-          <a class="arrow right"><i class="fa fa-angle-right"></i></a>
-        </div>
-      </div>
+<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
-      <div class="how-it-works">
-        <a class="down-arrow" href="#focus-areas" data-scroll-to="true"><i class="fa fa-chevron-down"></i></a> <a class="label" href="#focus-areas" data-scroll-to="true">Ve cómo funciona</a>
+<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+<div class="alert alert-success" role="alert">
+  <strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info" role="alert">
+  <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+</div>
+<div class="alert alert-danger" role="alert">
+  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<p class="m-y">
+  <a href="#">Inbox <span class="badge">42</span></a>
+</p>
+<ul class="nav nav-pills m-y" role="tablist">
+  <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+</ul>
+<ul class="nav nav-tabs m-y" role="tablist">
+  <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+</ul>
+<p>
+  <button class="btn btn-default" type="button">
+    Button <span class="badge">42</span>
+  </button>
+  <button class="btn btn-primary" type="button">
+    Button <span class="badge">42</span>
+  </button>
+</p>
+
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+<p>
+  <button type="button" class="btn btn-lg btn-default">Default</button>
+  <button type="button" class="btn btn-lg btn-primary">Primary</button>
+  <button type="button" class="btn btn-lg btn-success">Success</button>
+  <button type="button" class="btn btn-lg btn-info">Info</button>
+  <button type="button" class="btn btn-lg btn-warning">Warning</button>
+  <button type="button" class="btn btn-lg btn-danger">Danger</button>
+  <button type="button" class="btn btn-lg btn-link">Link</button>
+</p>
+<p>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
+</p>
+<p>
+  <button type="button" class="btn btn-sm btn-default">Default</button>
+  <button type="button" class="btn btn-sm btn-primary">Primary</button>
+  <button type="button" class="btn btn-sm btn-success">Success</button>
+  <button type="button" class="btn btn-sm btn-info">Info</button>
+  <button type="button" class="btn btn-sm btn-warning">Warning</button>
+  <button type="button" class="btn btn-sm btn-danger">Danger</button>
+  <button type="button" class="btn btn-sm btn-link">Link</button>
+</p>
+<p>
+  <button type="button" class="btn btn-xs btn-default">Default</button>
+  <button type="button" class="btn btn-xs btn-primary">Primary</button>
+  <button type="button" class="btn btn-xs btn-success">Success</button>
+  <button type="button" class="btn btn-xs btn-info">Info</button>
+  <button type="button" class="btn btn-xs btn-warning">Warning</button>
+  <button type="button" class="btn btn-xs btn-danger">Danger</button>
+  <button type="button" class="btn btn-xs btn-link">Link</button>
+</p>
+
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Default <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Success <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Info <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Warning <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Danger <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-default">Button</button>
+  <button type="button" class="btn btn-default">Button</button>
+  <button type="button" class="btn btn-default">Button</button>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-primary">Button</button>
+  <button type="button" class="btn btn-primary">Button</button>
+  <button type="button" class="btn btn-primary">Button</button>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-success">Button</button>
+  <button type="button" class="btn btn-success">Button</button>
+  <button type="button" class="btn btn-success">Button</button>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-info">Button</button>
+  <button type="button" class="btn btn-info">Button</button>
+  <button type="button" class="btn btn-info">Button</button>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-warning">Button</button>
+  <button type="button" class="btn btn-warning">Button</button>
+  <button type="button" class="btn btn-warning">Button</button>
+</div>
+<div class="btn-group m-a">
+  <button type="button" class="btn btn-danger">Button</button>
+  <button type="button" class="btn btn-danger">Button</button>
+  <button type="button" class="btn btn-danger">Button</button>
+</div>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://placehold.it/1140x500/777/555" alt="First slide" />
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1140x500/666/444" alt="Second slide" />
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1140x500/555/333" alt="Third slide" />
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile" />
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" /> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" />
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com" />
+  </div>
+  <button type="submit" class="btn btn-default">Send invitation</button>
+</form>
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" /> Remember me
+        </label>
       </div>
     </div>
-
-    <div class="focus-areas start-navbar-afix" id="focus-areas">
-
-      <div class="intro">
-        <img src="static/images/logo_blue.png" alt="Edoo"> <br> simplifica y <strong>agiliza procesos</strong> institucionales, facilitando la comunicación y garantizando la <strong>seguridad de tu información</strong>
-      </div>
-
-      <div class="areas" data-emerge="70%">
-        <div class="area grades">
-          <div class="icon"><i class="fa fa-file-text-o"></i></div>
-          <div class="data">
-            <div class="title">Boleta de calificaciones</div>
-            <div class="description">Y más reportes</div>
-            <a href="/caracteristicas/#reports-anchor" class="more">Más información...</a>
-          </div>
-        </div>
-
-        <div class="area calendar">
-          <div class="icon"><i class="fa fa-calendar-o"></i></div>
-          <div class="data">
-            <div class="title">Calendario y Agenda</div>
-            <div class="description">Organización eficaz</div>
-            <a href="/caracteristicas/#calendar-anchor" class="more">Más información...</a>
-          </div>
-        </div>
-
-        <div class="area payments">
-          <div class="icon"><i class="fa fa-mobile"></i></div>
-          <div class="data">
-            <div class="title">Apps móviles</div>
-            <div class="description">Acceso en todo lugar</div>
-            <a href="/caracteristicas/#apps-anchor" class="more">Más información...</a>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
     </div>
+  </div>
+</form>
 
-    <div class="all-the-info-you-need">
-      <div class="inner-wrapper">
-        <div class="lock"><i class="fa fa-lock"></i></div>
-        <div class="text">Toda la información que necesites en <strong>todo momento</strong> y lo más importante, de <strong>forma segura</strong></div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="" />
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled="" />
+    Option two is disabled
+  </label>
+</div>
 
-        <div class="buttons">
-          <a class="button blue" href="#start-now" rel="magnific-popup">Solicitar demo</a>
-          <a class="button green" href="/caracteristicas">Características</a>
-        </div>
-      </div>
-    </div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" />
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="" />
+    Option three is disabled
+  </label>
+</div>
 
-    <div class="no-time-wasted">
-      <div class="intro">Procesos que solían tardar horas con <img src="static/images/logo_blue.png" alt="Edoo"> <br>los puedes <strong>realizar en segundos.</strong></div>
+<p><input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="" /></p>
 
-      <div class="description">
-        <p>Nuestro fuerte enfoque en el usuario hace que Edoo sea fácil de usar.</p>
-        <p>Edoo es una herramienta que te ayuda a ser eficiente, y enfocarte en lo más importante: <strong>la educación.</strong></p>
-      </div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess2">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" />
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-warning has-feedback">
+  <label class="control-label" for="inputWarning2">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status" />
+  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+  <span id="inputWarning2Status" class="sr-only">(warning)</span>
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="control-label" for="inputError2">Input with error</label>
+  <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status" />
+  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  <span id="inputError2Status" class="sr-only">(error)</span>
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+  <div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status" />
+  </div>
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+</div>
 
-      <div class="computer-positioner">
-        <div class="computer-container" data-emerge="70%">
-          <div class="computer">
-            <div class="face"></div>
-            <div class="download"></div>
-            <div class="corner-notification"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<h1 class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</h1>
+<h2 class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</h2>
+<h3 class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</h3>
+<h4 class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</h4>
+<h5 class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</h5>
+<h6 class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</h6>
+<p class="m-y">
+  <span class="label label-default">Default</span>
+  <span class="label label-primary">Primary</span>
+  <span class="label label-success">Success</span>
+  <span class="label label-info">Info</span>
+  <span class="label label-warning">Warning</span>
+  <span class="label label-danger">Danger</span>
+</p>
 
-    <div class="agile-and-effective">
-      <div class="intro">
-        Sistema <strong>ágil</strong> y <strong>efectivo</strong> de notificaciones
-      </div>
-
-      <div class="description">
-        <p>Para que el proceso sea efectivo, es necesario que todos los involucrados estén al tanto de los eventos más importante.</p>
-        <p>El sistema de notificaciones te informa de todo lo que necesitas saber, en <strong>tiempo real</strong>.</p>
-        <p>&nbsp;</p>
-        <p><img src="static/images/devices_big.png" alt="Dispositivos"></p>
-      </div>
-
-      <div class="hand" data-emerge="70%">
-        <div class="bubble-container">
-          <div class="isotype"></div>
-          <div class="bubble">3</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="empowers">
-      <div class="intro">
-        Empodera a <strong>padres, alumnos y maestros</strong> motivándolos a participar activamente del proceso educativo
-      </div>
-
-      <hr>
-
-      <div class="tabs">
-        <a class="tab active" data-tab-content="#parents-tab-content">
-          <i class="fa fa-briefcase"></i> <br>
-          <span class="text">Padres</span>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjIyNjU2MjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;" />
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjIyNjU2MjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;" />
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjIyNjU2MjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;" />
         </a>
-
-        <a class="tab" data-tab-content="#students-tab-content">
-          <i class="fa fa-graduation-cap"></i> <br>
-          <span class="text">Alumnos</span>
-        </a>
-
-        <a class="tab" data-tab-content="#teachers-tab-content">
-          <i class="fa fa-coffee"></i> <br>
-          <span class="text">Maestros</span>
-        </a>
       </div>
-
-      <div class="tabs-content rotating-phone" data-emerge="70%">
-        <div class="tab-content" id="parents-tab-content">
-          <div class="phone-container">
-            <div class="dashed-lines"></div>
-
-            <div class="phone left"></div>
-
-            <a class="feature pos-1" href="/caracteristicas/#reports-anchor">
-              <span class="title-full">Boleta de<br>calificaciones</span>
-              <span class="icon"><i class="fa fa-file-text-o"></i></span>
-              <span class="title">Notas</span>
-            </a>
-
-            <a class="feature pos-3" href="/caracteristicas/#notifications-anchor">
-              <span class="title-full">Avisos y<br>Comunicación</span>
-              <span class="icon"><i class="fa fa-bell"></i></span>
-              <span class="title">Avisos</span>
-            </a>
-
-            <a class="feature pos-5" href="/caracteristicas/#reports-anchor">
-              <span class="icon"><i class="fa fa-money"></i></span>
-              <span class="title">Finanzas</span>
-              <span class="title-full">Resumen<br>Financiero</span>
-            </a>
-
-            <a class="feature pos-7" href="/caracteristicas/#reports-anchor">
-              <span class="icon"><i class="fa fa-bar-chart-o"></i></span>
-              <span class="title">Rendimiento</span>
-              <span class="title-full">Reportes de<br>Rendimiento</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="tab-content" id="students-tab-content">
-          <div class="phone-container">
-            <div class="dashed-lines"></div>
-
-            <div class="phone front"></div>
-
-            <a class="feature pos-3" href="/caracteristicas/#activities-anchor">
-              <span class="title-full">Actividades <br>y tareas</span>
-              <span class="icon"><i class="fa fa-calendar-o"></i></span>
-              <span class="title">Actividades</span>
-            </a>
-
-            <a class="feature pos-1" href="/caracteristicas/#notifications-anchor">
-              <span class="title-full">Avisos y<br>Comunicación</span>
-              <span class="icon"><i class="fa fa-bell"></i></span>
-              <span class="title">Avisos</span>
-            </a>
-
-            <a class="feature pos-5">
-              <span class="icon"><i class="fa fa-check"></i></span>
-              <span class="title">Notas</span>
-              <span class="title-full">Notas<br>al día</span>
-            </a>
-
-            <a class="feature pos-7" href="/caracteristicas/#achievements-anchor">
-              <span class="icon"><i class="fa fa-trophy"></i></span>
-              <span class="title">Logros</span>
-              <span class="title-full">Logros y<br>Rendimiento</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="tab-content" id="teachers-tab-content">
-          <div class="phone-container">
-            <div class="dashed-lines"></div>
-
-            <div class="phone right"></div>
-
-            <a class="feature pos-1" href="/caracteristicas/#activities-anchor">
-              <span class="title-full">Actividades<br>y tareas</span>
-              <span class="icon"><i class="fa fa-calendar-o"></i></span>
-              <span class="title">Actividades</span>
-            </a>
-
-            <a class="feature pos-3" href="/caracteristicas/#notifications-anchor">
-              <span class="title-full">Avisos y<br>Comunicación</span>
-              <span class="icon"><i class="fa fa-bell"></i></span>
-              <span class="title">Avisos</span>
-            </a>
-
-            <a class="feature pos-5">
-              <span class="icon"><i class="fa fa-check"></i></span>
-              <span class="title">Calificación</span>
-              <span class="title-full">Calificación<br>Eficiente</span>
-            </a>
-
-            <a class="feature pos-7" href="/caracteristicas/#reports-anchor">
-              <span class="icon"><i class="fa fa-bar-chart-o"></i></span>
-              <span class="title">Rendimiento</span>
-              <span class="title-full">Reportes de<br>Rendimiento</span>
-            </a>
-          </div>
-        </div>
+      <div class="media-body">
+        <h4 class="media-heading" id="nested-media-heading">Nested media heading<a class="anchorjs-link" href="#nested-media-heading"><span class="anchorjs-icon"></span></a></h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
       </div>
     </div>
+  </div>
+</div>
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  </div>
+  <div class="media-right">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjIyNjU2MjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;" />
+    </a>
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjIyNjU2MjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;" />
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  </div>
+  <div class="media-right">
+    <a href="#">
+      <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjIyNjU2MjUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;" />
+    </a>
+  </div>
+</div>
 
-    <div class="achievements">
-      <div class="inner-wrapper">
-        <div class="text">
-          <div class="intro">
-            <div class="inner-intro">
-              <img src="static/images/logo_blue.png" alt="Edoo"> introduce por primera vez un <strong>sistema de logros</strong> basado en <strong>competencias</strong>
-            </div>
-          </div>
-
-          <div class="description">
-            <p>Un logro es una representación gráfica de una <strong>competencia</strong> desarrollada por los alumnos.</p>
-            <p>Edoo permite a los maestros, estudiantes y padres entender de una manera profunda el desarrollo cognitivo de los estudiantes.</p>
-            <div class="achievement-icons">
-              <span class="achievement-icon">
-                <i class="fa fa-bell"></i>
-              </span>
-
-              <span class="achievement-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-
-              <span class="achievement-icon">
-                <i class="fa fa-trophy"></i>
-              </span>
-            </div>
-          </div>
+<div class="docs-example docs-example-modal">
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
         </div>
-
-        <div class="ipad-container" data-emerge="70%">
-          <div class="ipad">
-            <div class="green-achievement"></div>
-            <div class="yellow-achievement"></div>
-            <div class="purple-achievement"></div>
-          </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
         </div>
-      </div>
-    </div>
-
-    <div class="intelligent-reports">
-      <div class="floating-text">
-        <div class="intro">
-          <img src="static/images/logo_blue.png" alt="Edoo"> brinda a tu institución completo control en todo momento con <strong>reportes inteligentes</strong> para todos los usuarios
-        </div>
-
-        <div class="buttons">
-          <a class="button green" href="/caracteristicas#reports-anchor">Ver reportes</a>
-          <a class="button blue" href="#start-now" rel="magnific-popup">Más información</a>
-        </div>
-      </div>
-
-      <!-- <div class="arrows">
-        <div class="arrow-container">
-          <a class="arrow left"><i class="fa fa-angle-left"></i></a>
-          <a class="arrow right"><i class="fa fa-angle-right"></i></a>
-        </div>
-      </div> -->
-
-      <div class="slides-container">
-        <div class="slide student active" style="background-image: url(static/images/reportes/classroom.jpg);">
-          <div class="device-container-outer">
-            <div class="device-container-inner" data-emerge="60%">
-              <div class="device"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="slide teacher" style="background-image: url(static/images/reportes/office.jpg);">
-          <div class="device-container-outer">
-            <div class="device-container-inner" data-emerge="60%">
-              <div class="device"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slide parent" style="background-image: url(static/images/reportes/livingroom.jpg);">
-          <div class="device-container-outer">
-            <div class="device-container-inner" data-emerge="60%">
-              <div class="device"></div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-
-    <div class="size-does-not-matter">
-      <div class="wrapper">
-        <div class="icon-container">
-          <div class="icon-square-wrapper">
-            <div class="icon-circle-wrapper">
-              <i class="fa fa-graduation-cap"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="intro">
-          No importa el tamaño o tipo de tu institución, edoo <strong>se adapta</strong> para <strong>suplir tus necesidades</strong>, contamos con planes para todos.
-        </div>
-      </div>
-    </div>
-
-    <div class="testimonials">
-      <div class="wrapper">
-        <div class="intro">
-          Ve lo que maestros, padres y directivos están diciendo acerca de <img src="static/images/logo_blue.png" alt="Edoo">
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="slides-container" data-emerge="70%">
-          <div class="slide active">
-            <div class="comment">
-              Edoo es un sistema que me facilita <strong>calificar y llevar mis registros en orden</strong>, mis alumnos se mantienen <strong>atentos y motivados</strong> a cuando les asigno un logro.
-            </div>
-
-            <div class="person">
-              <span class="face">
-                <img src="static/images/teacher_face.png" alt="Profesor">
-              </span>
-
-              <span class="data">
-                <span class="name">Eunice Rosales</span><br>
-                <span class="role">Maestra Liga de Vida Nueva</span>
-              </span>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="comment">
-              Nunca antes había tenido la oportunidad de estar <strong>tan enterada de las actividades de mis hijas</strong>, edoo nos ha ayudado a que nunca se nos olvide entregar una tarea.
-            </div>
-
-            <div class="person">
-              <span class="face">
-                <img src="static/images/parent_face.png" alt="Profesor">
-              </span>
-
-              <span class="data">
-                <span class="name">Flor de López</span><br>
-                <span class="role">Padre de familia</span>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="arrows">
-          <div class="arrow-container">
-            <a class="arrow left"><i class="fa fa-angle-left"></i></a>
-            <a class="arrow right"><i class="fa fa-angle-right"></i></a>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-    <div class="popup-wrapper">
-      <div class="contact-popup popup" id="start-now">
-        <div class="title">
-          Comienza a usar <img class="logo" src="static/images/dark_logo.png" alt="Edoo">
-        </div>
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
 
-        <div class="subtitle">
-          También puedes  platicar con nosotros por medio de <strong>info@edoo.io</strong> o el teléfono <strong>(502) 3023 - 6828</strong>
-        </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-inverse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-collapse-inverse" id="navbar-collapse-inverse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
 
-        <form id="contact-form" method="POST" action="">
-          <label for="name">Nombre:</label>
-          <input name="name" type="text" placeholder="ej. Juan López" required>
+<nav>
+  <ul class="pagination pagination-lg">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav>
+  <ul class="pagination">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav>
+  <ul class="pagination pagination-sm">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-          <div class="half-container">
-            <div>
-              <label for="email">Información de contacto:</label>
-            </div>
-            <input class="half-left" name="email" type="email" placeholder="Email" required>
-            <input class="half-right" name="phone" type="text" placeholder="Teléfono" required>
-          </div>
-
-          <label for="school">Centro educativo</label>
-          <input name="school" type="text" placeholder="ej. Colegio el Saber" required>
-          <input name="subject" type="text" style="width:1px;height:1px;opacity:0.01;position:fixed;left:-1px;top:-1px;margin:0;padding:0;border:none;">
-          <select name="charge">
-            <option val="Soy director">Soy director</option>
-            <option val="Soy administrador">Soy administrador</option>
-            <option val="Soy maestro">Soy maestro</option>
-            <option val="Soy padre">Soy padre de familia</option>
-            <option val="Soy alumno">Soy alumno</option>
-          </select>
-
-          <div class="actions">
-            <a class="button gray no-shadow" onclick="jQuery.magnificPopup.close();">Cancelar</a>
-            <button class="button blue no-shadow" id="contact-submit" type="submit">Enviar</button>
-          </div>
-        </form>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
       </div>
     </div>
-
-    <div class="next-step">
-      <div class="intro">Da el siguiente paso hacia la innovación y tecnología educativa</div>
-      <div class="description">Pon a tu institución un paso adelante de las demás al implementar innovadoras herramientas organizacionales y educativas.</div>
-      <a class="button green open-contact" href="#start-now" rel="magnific-popup">Comienza ahora</a>
-    </div>
-
-    <div class="footer">
-      <div class="wrapper">
-
-        <div class="second-breaker">
-          <div class="edoo-info">
-            <div class="logo">
-              <img src="static/images/logo.png" alt="Edoo">
-            </div>
-
-            <div class="location">Guatemala - Guatemala C.A.</div>
-
-            <div class="contact-info">
-              <div class="row">
-                <span class="icon"><i class="fa fa-phone-square"></i></span> <span class="text">(502) 3023 - 6828</span>
-              </div>
-
-              <div class="row">
-                <span class="icon"><i class="fa fa-envelope"></i></span> <span class="text">info@edoo.io</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="first-breaker">
-            <div class="edoo-links">
-              <div class="columns">
-                <div class="column">
-                  <div class="title">Edoo</div>
-                  <div class="links">
-                    <a href="/">Tour</a>
-                    <a href="/caracteristicas">Características</a>
-                    <a href="/servicios">Servicios</a>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="title">Soporte</div>
-                  <div class="links">
-                    <a href="http://edoo.zendesk.com">Centro de ayuda</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="edoo-suscribe">
-              <div class="title">Suscríbete a nuestro Newsletter</div>
-              <form class="form" action="" method="POST">
-                <span class="input-wrapper">
-                  <input type="hidden" name="name" value="Suscripción">
-                  <input type="email" placeholder="Ingresa tu email aquí..." required>
-                  <i class="fa fa-envelope-o"></i>
-                </span>
-                <input name="subject" type="text" style="width:1px;height:1px;opacity:0.01;position:fixed;left:-1px;top:-1px;margin:0;padding:0;border:none;" required>
-
-                <button class="button blue" type="submit">Suscribirse</button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div class="edoo-credits">
-          &copy; 2015 edoo.io. All rights reserved. <a href="https://edoo.zendesk.com/hc/es/articles/206249497-T%C3%A9rminos-y-Privacidad">Terms of Service and Privacy Policy.</a>
-        </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
       </div>
     </div>
+  </div><!-- /.col-sm-4 -->
+  <div class="col-sm-4">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div><!-- /.col-sm-4 -->
+  <div class="col-sm-4">
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div><!-- /.col-sm-4 -->
+</div>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+<div class="docs-example bs-example-popover" data-example-id="static-popovers">
+  <div class="popover top">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover top</h3>
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+  <div class="popover right">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover right</h3>
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+  <div class="popover bottom">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover bottom</h3>
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+  <div class="popover left">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Popover left</h3>
+    <div class="popover-content">
+      <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
 
-        ga('create', 'UA-63779442-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+</div>
 
-    <script src="static/scripts/core.min.js"></script>
+<div class="row">
+  <div class="col-md-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-    <script>
-      jQuery("#contact-form").submit(function(e){
-        jQuery("#contact-submit").html("Enviando").addClass("disabled").attr("disabled", "disabled");
-      });
-    </script>
+<div class="row">
+  <div class="col-md-6">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@TwBootstrap</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-          <script>
-        applySlider(jQuery(".head"), true);
-        applySlider(jQuery(".intelligent-reports"));
-        applySlider(jQuery(".testimonials"));
-      </script>
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjE4NzUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;" />
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjE4NzUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;" />
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjE4NzUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;" />
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjYwLjE4NzUiIHk9IjkwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;" />
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkxLjc5Njg3NSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjExcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;" />
+      <div class="caption">
+        <h3 id="thumbnail-label">Thumbnail label<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkxLjc5Njg3NSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjExcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;" />
+      <div class="caption">
+        <h3 id="thumbnail-label">Thumbnail label<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkxLjc5Njg3NSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjExcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;" />
+      <div class="caption">
+        <h3 id="thumbnail-label">Thumbnail label<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs-example tooltip-demo">
+  <p>Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.</p>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Large well</h3>
+    <div class="well well-lg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+    </div>
+    <h3>Regular well</h3>
+    <div class="well">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum.</p>
+    </div>
+    <h3>Small well</h3>
+    <div class="well well-sm">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
     
-    
-    
+
+  </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
   </body>
 </html>
+
